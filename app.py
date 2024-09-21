@@ -3,9 +3,9 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-model = joblib.load("C:\\Users\\A R Taqi\\Documents\\All_projects\\Flight_delay\\Flight-Delay-Prediction-System-main\\flight_model.pkl")
-encoders = joblib.load("C:\\Users\\A R Taqi\\Documents\\All_projects\\Flight_delay\\Flight-Delay-Prediction-System-main\\encoders.pkl")
-df = pd.read_csv("C:\\Users\\A R Taqi\\Documents\\All_projects\\Flight_delay\\Flight-Delay-Prediction-System-main\\flight_data.csv")
+model = joblib.load("path")
+encoders = joblib.load("path")
+df = pd.read_csv("path")
 
 def app():
     st.title('Flight Delay Prediction')
