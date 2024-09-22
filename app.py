@@ -144,11 +144,19 @@ try:
     encoders = joblib.load('encoders.pkl')
 
     df = pd.read_csv("https://drive.google.com/uc?export=download&id=1jOcjb5T3Lmu2UdKW04XULK64wpAk1Hzo")
+
+    # Check DataFrame columns
+    st.write("Columns in the DataFrame:", df.columns.tolist())
+
 except Exception as e:
-    st.error(f"Error: {str(e)}")
+    st.error(f"Error loading data or model: {str(e)}")
     model = None
     encoders = {}
     df = pd.DataFrame()
+
+if df.empty:
+    st.error("DataFrame is empty. Please check the data source.")
+    return  # Exit the app if the DataFrame is empty
 
 def get_distance(origin, dest):
     distances = df[(df['origin'] == origin) & (df['dest'] == dest)]['distance'].values
@@ -261,4 +269,3 @@ def app():
 
 if __name__ == '__main__':
     app()
-
