@@ -19,7 +19,7 @@ Install the NYC Flights Dataset from Kaggle.<br>
 ```
 2. Run the Jupyter Notebook(.ipynb) once to create the flight_recommend.pkl and encoders.pkl file in your local system.
 
-3. Run app.py file using the streamlit command.
+3. Run app.py file using the streamlit command and change the path of the pkl files and dataset in app.py.
 
 ```bash
   streamlit run app.py
