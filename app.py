@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 try:
     model = joblib.load('https://drive.google.com/uc?export=download&id=1IZ1zMzy7-WOvA1JNPfMQWPl1Ch7HtToV')
     encoders = joblib.load("https://drive.google.com/uc?export=download&id=16d3iLlkwK7dpA5AOBATTukntnUymfpdv")
-    df = pd.read_csv("https://drive.google.com/uc?export=download&id=1jOcjb5T3Lmu2UdKW04XULK64wpAk1Hzo")
+    df = pd.read_csv("https://docs.google.com/spreadsheets/d/1WeCmzuKnxyvJa9dIffdIlEnnsxXNVczLQDnHRMcYTi0/export?format=csv")
 except FileNotFoundError:
     st.error("Error: One or more files not found. Please check file paths.")
     # Set default values if data loading fails
