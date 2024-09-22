@@ -31,4 +31,4 @@ Install the NYC Flights Dataset from Kaggle.<br>
 - Flight departure delay prediction
 - Fast and effective
 - User friendly UI using Streamlit
-
+- Slider to change the time, date and duration
