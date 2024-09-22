@@ -5,3 +5,4 @@ pandas
 numpy
 folium
 plotly
+streamlit_foilum
