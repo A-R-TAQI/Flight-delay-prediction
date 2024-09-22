@@ -143,7 +143,7 @@ try:
     download_file('https://drive.google.com/uc?export=download&id=16d3iLlkwK7dpA5AOBATTukntnUymfpdv', 'encoders.pkl')
     encoders = joblib.load('encoders.pkl')
 
-    df = pd.read_csv("https://docs.google.com/spreadsheets/d/1WeCmzuKnxyvJa9dIffdIlEnnsxXNVczLQDnHRMcYTi0/export?format=csv")
+    df = pd.read_csv("https://drive.google.com/uc?export=download&id=1jOcjb5T3Lmu2UdKW04XULK64wpAk1Hzo")
 except Exception as e:
     st.error(f"Error: {str(e)}")
     model = None
