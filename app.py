@@ -156,7 +156,7 @@ except Exception as e:
 
 if df.empty:
     st.error("DataFrame is empty. Please check the data source.")
-    return  # Exit the app if the DataFrame is empty
+    st.stop()  # Exit the app if the DataFrame is empty
 
 def get_distance(origin, dest):
     distances = df[(df['origin'] == origin) & (df['dest'] == dest)]['distance'].values
