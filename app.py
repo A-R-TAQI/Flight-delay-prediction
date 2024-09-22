@@ -8,9 +8,9 @@ from streamlit_folium import folium_static
 
 # Load data and model
 try:
-    model = joblib.load('https://drive.google.com/file/d/1IZ1zMzy7-WOvA1JNPfMQWPl1Ch7HtToV/view?usp=drive_link')
-    encoders = joblib.load("https://drive.google.com/file/d/16d3iLlkwK7dpA5AOBATTukntnUymfpdv/view?usp=drive_link")
-    df = pd.read_csv("https://drive.google.com/file/d/1jOcjb5T3Lmu2UdKW04XULK64wpAk1Hzo/view?usp=drive_link")
+    model = joblib.load('https://drive.google.com/uc?export=download&id=1IZ1zMzy7-WOvA1JNPfMQWPl1Ch7HtToV')
+    encoders = joblib.load("https://drive.google.com/uc?export=download&id=16d3iLlkwK7dpA5AOBATTukntnUymfpdv")
+    df = pd.read_csv("https://drive.google.com/uc?export=download&id=1jOcjb5T3Lmu2UdKW04XULK64wpAk1Hzo")
 except FileNotFoundError:
     st.error("Error: One or more files not found. Please check file paths.")
     # Set default values if data loading fails
